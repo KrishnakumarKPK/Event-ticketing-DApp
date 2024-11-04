@@ -1,0 +1,88 @@
+{
+  "name": "EventTicketingDApp",
+  "desc": "",
+  "methods": [
+    {
+      "name": "createEvent",
+      "args": [
+        {
+          "name": "organizer",
+          "type": "address"
+        },
+        {
+          "name": "ticketAssetId",
+          "type": "uint64"
+        },
+        {
+          "name": "ticketPrice",
+          "type": "uint64"
+        },
+        {
+          "name": "resaleLimit",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "optInToAsset",
+      "args": [
+        {
+          "name": "mbrTxn",
+          "type": "pay"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "buyTicket",
+      "args": [
+        {
+          "name": "buyerTxn",
+          "type": "pay"
+        },
+        {
+          "name": "quantity",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "transferTicket",
+      "args": [
+        {
+          "name": "ticketId",
+          "type": "uint64"
+        },
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "deleteEvent",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "createApplication",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    }
+  ]
+}
