@@ -1,4 +1,4 @@
-# Qwerty
+# Event Ticketing DApp
 
 Welcome to your new AlgoKit project!
 
